@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_preparation">প্রস্তুতি</string>
+
+    <!-- SCREENS -->
+    <string name="screen_home">হোম</string>
+    <string name="screen_poll_summary">ভোটের সারাংশ</string>
+    <string name="screen_login">লগইন</string>
+    <string name="screen_sign_up">সাইন আপ</string>
+    <string name="screen_profile">প্রোফাইল</string>
+
+</resources>

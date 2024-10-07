@@ -1,0 +1,118 @@
+[versions]
+cognito-clientlib = "0.0.1"
+compose = "1.7.2"
+compose-plugin = "1.6.11"
+compose-compiler = "1.5.5"
+agp = "8.2.2"
+android-minSdk = "24"
+android-compileSdk = "34"
+android-targetSdk = "34"
+androidx-activityCompose = "1.9.2"
+androidx-core-ktx = "1.13.1"
+jdk = "17"
+kotlin = "2.0.20"
+junit = "4.13.2"
+
+# Google
+google-services = "4.4.2"
+crashlytics = "3.0.2"
+arrow = "1.2.4"
+
+# KotlinX
+kotlinxDateTime = "0.6.1"
+krossbowStompCore = "5.12.0"
+krossbowStompKxserialization = "5.7.0"
+serializationVersion = "1.6.3"
+
+ktor = "2.3.12"
+koin = "4.0.0"
+voyager = "1.1.0-beta02"
+composeImageLoader = "1.6.7"
+dataStore = "1.1.1"
+aayChart = "Beta-0.0.5"
+kermit = "2.0.4"
+kermit-stately="2.1.0"
+
+# Android Specific
+coil = "2.7.0"
+sentry = "0.1.1"
+firebase-bom = "33.4.0"
+play-service="23.4.0"
+
+[libraries]
+cognito-clientlib = { module = "org.cognitox.libs:clientlib", version.ref = "cognito-clientlib" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+
+# Kotlin
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+# KotlinX
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDateTime" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationVersion" }
+
+#Arrow
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow" }
+
+# Logging
+kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
+kermit-stately = { module = "co.touchlab:stately-common", version.ref = "kermit-stately" }
+
+# ktor
+krossbow-stomp-kxserialization = { module = "org.hildan.krossbow:krossbow-stomp-kxserialization-json", version.ref = "krossbowStompKxserialization" }
+ktor = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+
+# krossbrow STOMP client
+krossbow-stomp-core = { module = "org.hildan.krossbow:krossbow-stomp-core", version.ref = "krossbowStompCore" }
+krossbow-websocket-ktor = { module = "org.hildan.krossbow:krossbow-websocket-ktor", version.ref = "krossbowStompCore" }
+
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyager" }
+
+# https://github.com/qdsfdhvh/compose-imageloader
+image-loader = { module = "io.github.qdsfdhvh:image-loader", version.ref = "composeImageLoader" }
+
+# DataStore
+datastore-preferences-core = { module = "androidx.datastore:datastore-preferences-core", version.ref = "dataStore" }
+
+# Chart
+aaychart = { module = "io.github.thechance101:chart", version.ref = "aayChart" }
+
+### Android Specific
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coil" }
+sentry-kotlin-multiplatform = { module = "io.sentry:sentry-kotlin-multiplatform", version.ref = "sentry" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+
+# Import the Firebase BoM
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+# When using the BoM, don't specify versions in Firebase dependencies
+firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx" }
+firebase-crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx" }
+firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx" }
+play-service-ads={module="com.google.android.gms:play-services-ads", version.ref="play-service"}
+
+### IOS Specific
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+
+
+[plugins]
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+googleServices = { id = "com.google.gms.google-services", version.ref = "google-services" }
+crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "crashlytics" }

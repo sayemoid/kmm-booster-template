@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="key_sentry_dsn">https://8d1741cf46ba474d9539eac057269f51@o4505135996272640.ingest.sentry.io/4505135998828544</string>
+
+    <string name="key_admob_ad_id_debug">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="key_admob_ad_id_release">ca-app-pub-7944444189407778/1316428355</string>
+
+    <string name="client_id_dev">client_id</string>
+    <string name="client_secret_dev">client_secret</string>
+
+</resources>

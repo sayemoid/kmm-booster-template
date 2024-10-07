@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="example_app_name">Example</string>
+
+    <!-- SCREENS -->
+    <string name="screen_home">Home</string>
+    <string name="screen_poll_details">Home</string>
+    <string name="screen_poll_summary">Poll Summary</string>
+    <string name="screen_login">Login</string>
+    <string name="screen_sign_up">Signup</string>
+    <string name="screen_profile">Profile</string>
+
+</resources>
